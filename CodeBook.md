@@ -2,11 +2,11 @@
 
 The tidy_data_summary.txt file and tidy_data_summary_wide.txt file are based on the data downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. The raw data came from an experience while 30 research participants performed 6 pre-defined activities wearing a smartphone on the waist. The original data set were divided into 2 sets - the training set and the test set. This analysis combined the 2 sets into 1. 
 
-The original set has 561 variables. This analysis only focused those measuring mean and standard deviation and reduced the number of variables to 66. The variable names have also been cleaned up to make more easier to read and understand. Please see the table below for details.
+The original set has 561 variables. This analysis only focused on those measuring mean and standard deviation and reduced the number of variables to 66. The variable names have also been cleaned up to make them easier to read and understand. Please see the table below for details.
 
 This analysis summarized the values of each variable by its average (i.e. mean) per participant per activity. For privacy reson, each participant is assigned with an ID under the column "subject". The activity is represented by its name under the column "activity_name". 
 
-The summarized data is organized in 2 forms - the long form and the wide form. The "tidy_data_summary.txt" file is the long form and it has only 4 columns - subject, activity_name, measure, and average_value. Each variable is listed as a separate record under the "measure" column. The "tidy_data_summary_wide.txt" file is the wide form and it has 68 columns. Each variable is listed as a column, following the subject and activity_name columns. 
+The summarized data is organized in 2 forms - the long form and the wide form. The "tidy_data_summary.txt" file is the long form and it has only 4 columns - "subject", "activity_name", "measure", and "average_value". Each variable is listed as a separate record under the "measure" column. The "tidy_data_summary_wide.txt" file is the wide form and it has 68 columns. Each variable is listed as a column, following the "subject" and "activity_name" columns. 
 
 Original Name |Updated Name
 ------------- |--------------
