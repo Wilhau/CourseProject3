@@ -51,7 +51,7 @@ colnames(data) <- sub("Gyro ", "gyroscope ", colnames(data))
 ## 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 tidy_data <- gather(data, measure, measurement, -subject, -activity_name)
 tidy_data_summary <- summarize(group_by(tidy_data, subject, activity_name, measure), average_value = mean(measurement))
-write.table(tidy_data_summary, "tidy_data_summary.csv", row.names=FALSE)
+write.table(tidy_data_summary, "tidy_data_summary.txt", row.names=FALSE)
 
 ##5.1. Create a "wide" form of tidy data as an alternative to the "long" form
 tidy_data_summary_wide <- spread(tidy_data_summary, measure, average_value)
